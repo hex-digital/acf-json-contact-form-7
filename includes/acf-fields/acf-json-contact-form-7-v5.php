@@ -43,7 +43,7 @@ if ( ! class_exists( 'ACF_JSON_Contact_Form_7_V5' ) ) {
             foreach ( $contact_forms as $form ) {
                 $option = [];
                 $option['id'] = $form->id();
-                $option['selected'] = $field_value === $option['id'] ? ' selected' : '';
+                $option['selected'] = $field_value == $option['id'] ? ' selected' : '';
                 $option['title'] = $form->title();
 
                 $options[] = $option;
